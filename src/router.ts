@@ -1,7 +1,7 @@
-import { Currency, CurrencyAmount, Percent, TradeType, validateAndParseAddress } from '@uniswap/sdk-core'
+import { Currency, CurrencyAmount, Percent, TradeType, validateAndParseAddress } from '@lamamoon/swap-sdk-core'
 import { Trade } from 'entities'
 import invariant from 'tiny-invariant'
-import { Token } from '../../../sdk-core'
+import { Token } from '@lamamoon/swap-sdk-core'
 
 /**
  * Options for producing the arguments to send call to the router.

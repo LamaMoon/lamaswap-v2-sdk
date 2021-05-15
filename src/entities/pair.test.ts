@@ -1,4 +1,4 @@
-import { ChainId, Token, WETH9, Price, CurrencyAmount, currencyEquals } from '@uniswap/sdk-core'
+import { ChainId, Token, WETH9, Price, CurrencyAmount, currencyEquals } from '@lamamoon/swap-sdk-core'
 import { InsufficientInputAmountError } from '../errors'
 import { computePairAddress, Pair } from './pair'
 
@@ -12,7 +12,7 @@ describe('computePairAddress', () => {
       tokenB
     })
 
-    expect(result).toEqual('0xb50b5182D6a47EC53a469395AF44e371d7C76ed4')
+    expect(result).toEqual('0xFb70fE7ecF865FA2DC381ed08F67dF6376F2297D')
   })
   it('should give same result regardless of token order', () => {
     const USDC = new Token(ChainId.MAINNET, '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48', 18, 'USDC', 'USD Coin')
@@ -55,7 +55,7 @@ describe('Pair', () => {
 
   describe('#getAddress', () => {
     it('returns the correct address', () => {
-      expect(Pair.getAddress(USDC, DAI)).toEqual('0xAE461cA67B15dc8dc81CE7615e0320dA1A9aB8D5')
+      expect(Pair.getAddress(USDC, DAI)).toEqual('0x3C3EE3BB0b9a8f70B06D64039eC6e7B4C80E4963')
     })
   })
 

@@ -10,8 +10,8 @@ import {
   wrappedCurrency,
   TradeType,
   wrappedCurrencyAmount
-} from '@uniswap/sdk-core'
-import { computePriceImpact, Token } from '../../../../sdk-core'
+} from '@lamamoon/swap-sdk-core'
+import { computePriceImpact, Token } from '@lamamoon/swap-sdk-core'
 import { ONE, ZERO } from '../constants'
 import invariant from 'tiny-invariant'
 
